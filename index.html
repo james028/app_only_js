@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Javascript App</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    
+  </head>
+  <body>
+      <div class="container conter-border">
+        <div class="row">
+            <div class="col-sm-12 col-md-8 col-offset-2">
+                <div class="row">
+                    <div class="panel-heading text-center">
+                        Dodaj nowe zadanie
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="todo-input" placeholder="Wpisz zadania do wykonania">
+                    </div>
+                    <div class="col-md-2">
+                        <button type="submit" class="btn btn-block btn-success" id="add-todo-btn">Dodaj</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="descrip">
+                            <p>Zrobić zakupy</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="checkb">
+                            <label>
+                                <input type="checkbox"> Gotowe
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="submit" class="btn btn-block btn-danger">Usuń</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="panel-1">
+                        <div class="panel-body">
+                            <button type="submit" class="btn btn-primary" id="filter-all-btn">Wszystkie</button>
+                            <button type="submit" class="btn btn-default" id="filter-completed-btn">Gotowe</button>
+                            <button type="submit" class="btn btn-default" id="filter-not-completed-btn">Niegotowe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+      </div>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js.main.js"></script>
+    <script src="app/todoview.js"></script>
+      <script src="app/todo.js"></script>
+
+  </body>
+</html>
